@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero-header {
+    width: 100%;
+    min-height: 100vh;
+    background: #b58cc6;
+}
+
+.wrapper {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .logo-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+nav .togglebtn {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 45px;
+  right: 3%;
+  z-index: 5;
+  cursor: pointer;
+  background-color: #b58cc6;
+  display: none;
+}
+
+nav .togglebtn span{
+    display: block;
+    background-color: #6b1a8e;
+    margin: 5px 0px;
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    transition-property: transform, opacity;
+}
+
+nav .navlinks{
+    list-style-type: none;
+}
+
+nav .navlinks li{
+    display: inline-block;
+}
+
+nav .navlinks li a{
+    color: #e5e5e5;
+    margin-right: 2.5rem;;
+}
+
+
+.fibro-container{
+  width: 100%;
+  max-width: 1200px;
+  margin:40px auto;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  color: #fff;
+  font-family: 'poppins', sans-serif;
+}
+
+.fibro-menu{
+  width: 280px;
+  background: rgba(120, 50, 150, 0.25);
+  padding: 30px 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.menu-btn{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background: transparent;
+  color: #e5e5e5;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.menu-btn:hover{
+  background: rgba(93, 1, 107, 0.25);
+  transform: scale(1.02);
+}
+
+.menu-btn.active{
+  background:#762ba8 ;
+  color: #fff;
+}
+
+.fibro-container{
+  flex: 1;
+}
+
+.main-title{
+  font-size: 32px;
+  font-weight: 800;
+  color:#e3dfff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-title span{
+  color: #762ba8;
+}
+
+.text-box{
+  background: rgba(120, 50, 150, 0.25);
+  padding: 30px;
+  border-radius: 18px;
+  line-height: 1.7;
+  color: #f0f0f0;
+  font-size: 15px;
+  text-align: justify;
+}
+
+
+@media (max-width:900px){
+  .fibro-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .fibro-menu{
+    width: 90%;
+  }
+  .fibro-content{
+    width: 90%;
+  }
+  .main-title{
+    font-size: 28px;
+  }
+}
