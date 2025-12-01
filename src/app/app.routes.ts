@@ -16,4 +16,5 @@ export const routes: Routes = [
   { path: 'sintomas', component: Sintomas },
   { path: 'sobre', component: Sobre },
   { path: 'tratamento', component: Tratamento },
+  {path: '**', redirectTo: 'home', pathMatch:'full'}
 ];
